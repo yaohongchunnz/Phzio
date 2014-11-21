@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <ApplicationInsightsResourceId>/subscriptions/98bb4f0d-1538-423a-8ad3-339ce992c286/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/Phzio</ApplicationInsightsResourceId>
+    <NuGetPackageImportStamp>d4e7077d</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +40,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ApplicationInsights">
       <HintPath>..\packages\Microsoft.ApplicationInsights.0.11.1-build00694\lib\net40\Microsoft.ApplicationInsights.dll</HintPath>
     </Reference>
@@ -48,9 +59,58 @@
     <Reference Include="Microsoft.ApplicationInsights.Extensibility.Web">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Web.0.11.1-build00694\lib\net45\Microsoft.ApplicationInsights.Extensibility.Web.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource">
-      <HintPath>..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.0.24\lib\net40\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource, Version=1.0.26.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.0.26\lib\net40\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Threading.Tasks">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
@@ -61,7 +121,18 @@
     <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -71,6 +142,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -78,6 +152,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -103,39 +181,734 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Porto\css\custom.css" />
+    <Content Include="Porto\css\fonts\star.svg" />
+    <Content Include="Porto\css\ie.css" />
+    <Content Include="Porto\css\skins\default.css" />
+    <Content Include="Porto\css\theme-animate.css" />
+    <Content Include="Porto\css\theme-blog.css" />
+    <Content Include="Porto\css\theme-elements.css" />
+    <Content Include="Porto\css\theme-shop.css" />
+    <Content Include="Porto\css\theme.css" />
+    <Content Include="Porto\img\admin-banner.png" />
+    <Content Include="Porto\img\apple-touch-icon-precomposed.png" />
+    <Content Include="Porto\img\arrows-dark.png" />
+    <Content Include="Porto\img\arrows.png" />
+    <Content Include="Porto\img\avatar-2.jpg" />
+    <Content Include="Porto\img\avatar-3.jpg" />
+    <Content Include="Porto\img\avatar-4.jpg" />
+    <Content Include="Porto\img\avatar.jpg" />
+    <Content Include="Porto\img\blog\blog-image-1.jpg" />
+    <Content Include="Porto\img\blog\blog-image-2.jpg" />
+    <Content Include="Porto\img\blog\blog-image-3.jpg" />
+    <Content Include="Porto\img\blog\blog-medium-image-1.jpg" />
+    <Content Include="Porto\img\blog\blog-medium-image-2.jpg" />
+    <Content Include="Porto\img\blog\blog-medium-image-3.jpg" />
+    <Content Include="Porto\img\blog\blog-thumb-1.jpg" />
+    <Content Include="Porto\img\blog\blog-thumb-2.jpg" />
+    <Content Include="Porto\img\blog\blog-thumb-3.jpg" />
+    <Content Include="Porto\img\clients\client-1.jpg" />
+    <Content Include="Porto\img\custom-header-bg.jpg" />
+    <Content Include="Porto\img\custom-header.png" />
+    <Content Include="Porto\img\device.png" />
+    <Content Include="Porto\img\favicon.ico" />
+    <Content Include="Porto\img\history-thumb-dark.png" />
+    <Content Include="Porto\img\history-thumb.png" />
+    <Content Include="Porto\img\holder.png" />
+    <Content Include="Porto\img\home-concept-dark.png" />
+    <Content Include="Porto\img\home-concept-icons-dark.png" />
+    <Content Include="Porto\img\home-concept-icons.png" />
+    <Content Include="Porto\img\home-concept-item-1.png" />
+    <Content Include="Porto\img\home-concept-item-2.png" />
+    <Content Include="Porto\img\home-concept-item-3.png" />
+    <Content Include="Porto\img\home-concept-item-dark.png" />
+    <Content Include="Porto\img\home-concept-item.png" />
+    <Content Include="Porto\img\home-concept-shadow.png" />
+    <Content Include="Porto\img\home-concept.png" />
+    <Content Include="Porto\img\icons\icon-user-16.png" />
+    <Content Include="Porto\img\icons\icon-user-24.png" />
+    <Content Include="Porto\img\icons\icon-user-48.png" />
+    <Content Include="Porto\img\list-primary.png" />
+    <Content Include="Porto\img\logo-dark.png" />
+    <Content Include="Porto\img\logo-default.png" />
+    <Content Include="Porto\img\logo-footer-small.png" />
+    <Content Include="Porto\img\logo-footer.png" />
+    <Content Include="Porto\img\logo.png" />
+    <Content Include="Porto\img\logos\logo-1.png" />
+    <Content Include="Porto\img\logos\logo-2.png" />
+    <Content Include="Porto\img\logos\logo-3.png" />
+    <Content Include="Porto\img\logos\logo-4.png" />
+    <Content Include="Porto\img\logos\logo-5.png" />
+    <Content Include="Porto\img\logos\logo-6.png" />
+    <Content Include="Porto\img\map-bottom-dark.png" />
+    <Content Include="Porto\img\map-bottom.png" />
+    <Content Include="Porto\img\map-top-dark.png" />
+    <Content Include="Porto\img\map-top.png" />
+    <Content Include="Porto\img\office-1.jpg" />
+    <Content Include="Porto\img\office-2.jpg" />
+    <Content Include="Porto\img\office-3.jpg" />
+    <Content Include="Porto\img\office-4.jpg" />
+    <Content Include="Porto\img\parallax-transparent.jpg" />
+    <Content Include="Porto\img\parallax.jpg" />
+    <Content Include="Porto\img\patterns\az_subtle.png" />
+    <Content Include="Porto\img\patterns\blizzard.png" />
+    <Content Include="Porto\img\patterns\bright_squares.png" />
+    <Content Include="Porto\img\patterns\denim.png" />
+    <Content Include="Porto\img\patterns\fancy_deboss.png" />
+    <Content Include="Porto\img\patterns\gray_jean.png" />
+    <Content Include="Porto\img\patterns\honey_im_subtle.png" />
+    <Content Include="Porto\img\patterns\linedpaper.png" />
+    <Content Include="Porto\img\patterns\linen.png" />
+    <Content Include="Porto\img\patterns\pw_maze_white.png" />
+    <Content Include="Porto\img\patterns\random_grey_variations.png" />
+    <Content Include="Porto\img\patterns\skin_side_up.png" />
+    <Content Include="Porto\img\patterns\stitched_wool.png" />
+    <Content Include="Porto\img\patterns\straws.png" />
+    <Content Include="Porto\img\patterns\subtle_grunge.png" />
+    <Content Include="Porto\img\patterns\textured_stripes.png" />
+    <Content Include="Porto\img\patterns\wild_oliva.png" />
+    <Content Include="Porto\img\patterns\worn_dots.png" />
+    <Content Include="Porto\img\pin.png" />
+    <Content Include="Porto\img\products\product-1.jpg" />
+    <Content Include="Porto\img\products\product-10.jpg" />
+    <Content Include="Porto\img\products\product-11.jpg" />
+    <Content Include="Porto\img\products\product-12.jpg" />
+    <Content Include="Porto\img\products\product-13.jpg" />
+    <Content Include="Porto\img\products\product-2.jpg" />
+    <Content Include="Porto\img\products\product-3.jpg" />
+    <Content Include="Porto\img\products\product-4.jpg" />
+    <Content Include="Porto\img\products\product-5.jpg" />
+    <Content Include="Porto\img\products\product-6.jpg" />
+    <Content Include="Porto\img\products\product-7-2.jpg" />
+    <Content Include="Porto\img\products\product-7-3.jpg" />
+    <Content Include="Porto\img\products\product-7.jpg" />
+    <Content Include="Porto\img\products\product-8.jpg" />
+    <Content Include="Porto\img\products\product-9.jpg" />
+    <Content Include="Porto\img\projects\project-1.jpg" />
+    <Content Include="Porto\img\projects\project-2.jpg" />
+    <Content Include="Porto\img\projects\project-3.jpg" />
+    <Content Include="Porto\img\projects\project-4.jpg" />
+    <Content Include="Porto\img\projects\project-5.jpg" />
+    <Content Include="Porto\img\projects\project-6.jpg" />
+    <Content Include="Porto\img\projects\project-7.jpg" />
+    <Content Include="Porto\img\projects\project-home-1.jpg" />
+    <Content Include="Porto\img\projects\project-home-2.jpg" />
+    <Content Include="Porto\img\projects\project-home-3.jpg" />
+    <Content Include="Porto\img\projects\project-thumb.jpg" />
+    <Content Include="Porto\img\projects\project.jpg" />
+    <Content Include="Porto\img\slides\dark-cover.jpg" />
+    <Content Include="Porto\img\slides\light-cover.jpg" />
+    <Content Include="Porto\img\slides\mobile-device.png" />
+    <Content Include="Porto\img\slides\slide-1.jpg" />
+    <Content Include="Porto\img\slides\slide-2.jpg" />
+    <Content Include="Porto\img\slides\slide-bg-full.jpg" />
+    <Content Include="Porto\img\slides\slide-bg-light.jpg" />
+    <Content Include="Porto\img\slides\slide-bg.jpg" />
+    <Content Include="Porto\img\slides\slide-concept-2-1.png" />
+    <Content Include="Porto\img\slides\slide-concept-2-2.png" />
+    <Content Include="Porto\img\slides\slide-concept-2-3.png" />
+    <Content Include="Porto\img\slides\slide-concept-2-4.png" />
+    <Content Include="Porto\img\slides\slide-concept-2-5.png" />
+    <Content Include="Porto\img\slides\slide-concept-draft.png" />
+    <Content Include="Porto\img\slides\slide-concept.png" />
+    <Content Include="Porto\img\slides\slide-light-1.jpg" />
+    <Content Include="Porto\img\slides\slide-title-border-light.png" />
+    <Content Include="Porto\img\slides\slide-title-border.png" />
+    <Content Include="Porto\img\social-sprites.png" />
+    <Content Include="Porto\img\system.jpg" />
+    <Content Include="Porto\img\team\team-1.jpg" />
+    <Content Include="Porto\img\team\team-2.jpg" />
+    <Content Include="Porto\img\team\team-3.jpg" />
+    <Content Include="Porto\img\team\team-4.jpg" />
+    <Content Include="Porto\img\team\team-5.jpg" />
+    <Content Include="Porto\img\team\team-6.jpg" />
+    <Content Include="Porto\img\team\team-7.jpg" />
+    <Content Include="Porto\img\team\team-8.jpg" />
+    <Content Include="Porto\img\team\team-9.jpg" />
+    <Content Include="Porto\img\video-overlay.png" />
+    <Content Include="Porto\js\custom.js" />
+    <Content Include="Porto\js\theme.init.js" />
+    <Content Include="Porto\js\theme.js" />
+    <Content Include="Porto\js\views\view.contact.js" />
+    <Content Include="Porto\js\views\view.home.js" />
+    <Content Include="Porto\master\less\less.js" />
+    <Content Include="Porto\master\sass\fonts\star.svg" />
+    <Content Include="Porto\master\style-switcher\colorpicker\css\colorpicker.css" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\blank.gif" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_background.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_hex.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_hsb_b.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_hsb_h.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_hsb_s.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_indic.gif" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_overlay.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_rgb_b.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_rgb_g.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_rgb_r.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_select.gif" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\colorpicker_submit.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_background.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_hex.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_hsb_b.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_hsb_h.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_hsb_s.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_indic.gif" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_rgb_b.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_rgb_g.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_rgb_r.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\custom_submit.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\select.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\select2.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\images\slider.png" />
+    <Content Include="Porto\master\style-switcher\colorpicker\js\colorpicker.js" />
+    <Content Include="Porto\master\style-switcher\colorpicker\js\eye.js" />
+    <Content Include="Porto\master\style-switcher\colorpicker\js\jquery.js" />
+    <Content Include="Porto\master\style-switcher\colorpicker\js\layout.js" />
+    <Content Include="Porto\master\style-switcher\colorpicker\js\utils.js" />
+    <Content Include="Porto\master\style-switcher\cssbeautify\cssbeautify.js" />
+    <Content Include="Porto\master\style-switcher\style-switcher.css" />
+    <Content Include="Porto\master\style-switcher\style.switcher.js" />
+    <Content Include="Porto\php\contact-form-verify-captcha.php" />
+    <Content Include="Porto\php\contact-form.php" />
+    <Content Include="Porto\php\newsletter-subscribe.php" />
+    <Content Include="Porto\php\php-mailer\class.phpmailer.php" />
+    <Content Include="Porto\php\php-mailer\class.pop3.php" />
+    <Content Include="Porto\php\php-mailer\class.smtp.php" />
+    <Content Include="Porto\php\php-mailer\docs\Callback_function_notes.txt" />
+    <Content Include="Porto\php\php-mailer\docs\DomainKeys_notes.txt" />
+    <Content Include="Porto\php\php-mailer\docs\extending.html" />
+    <Content Include="Porto\php\php-mailer\docs\faq.html" />
+    <Content Include="Porto\php\php-mailer\docs\Note_for_SMTP_debugging.txt" />
+    <Content Include="Porto\php\php-mailer\docs\pop3_article.txt" />
+    <Content Include="Porto\php\php-mailer\examples\contents.html" />
+    <Content Include="Porto\php\php-mailer\examples\images\phpmailer.png" />
+    <Content Include="Porto\php\php-mailer\examples\images\phpmailer_mini.png" />
+    <Content Include="Porto\php\php-mailer\examples\index.html" />
+    <Content Include="Porto\php\php-mailer\examples\LGPLv3.txt" />
+    <Content Include="Porto\php\php-mailer\examples\scripts\shAutoloader.js" />
+    <Content Include="Porto\php\php-mailer\examples\scripts\shBrushPhp.js" />
+    <Content Include="Porto\php\php-mailer\examples\scripts\shCore.js" />
+    <Content Include="Porto\php\php-mailer\examples\scripts\shLegacy.js" />
+    <Content Include="Porto\php\php-mailer\examples\scripts\XRegExp.js" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shCore.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shCoreDefault.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shCoreDjango.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shCoreEclipse.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shCoreEmacs.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shCoreFadeToGrey.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shCoreMDUltra.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shCoreMidnight.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shCoreRDark.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeAppleScript.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeDefault.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeDjango.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeEclipse.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeEmacs.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeFadeToGrey.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeMDUltra.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeMidnight.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeRDark.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\shThemeVisualStudio.css" />
+    <Content Include="Porto\php\php-mailer\examples\styles\wrapping.png" />
+    <Content Include="Porto\php\php-mailer\extras\class.html2text.php" />
+    <Content Include="Porto\php\php-mailer\extras\EasyPeasyICS.php" />
+    <Content Include="Porto\php\php-mailer\extras\htmlfilter.php" />
+    <Content Include="Porto\php\php-mailer\extras\ntlm_sasl_client.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-ar.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-be.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-br.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-ca.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-ch.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-cz.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-de.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-dk.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-el.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-eo.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-es.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-et.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-fa.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-fi.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-fo.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-fr.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-gl.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-he.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-hr.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-hu.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-it.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-ja.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-ka.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-lt.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-lv.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-nl.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-no.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-pl.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-pt.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-ro.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-ru.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-se.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-sk.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-sr.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-tr.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-uk.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-vi.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-zh.php" />
+    <Content Include="Porto\php\php-mailer\language\phpmailer.lang-zh_cn.php" />
+    <Content Include="Porto\php\php-mailer\PHPMailerAutoload.php" />
+    <Content Include="Porto\php\php-mailer\test\bootstrap.php" />
+    <Content Include="Porto\php\php-mailer\test\phpmailerLangTest.php" />
+    <Content Include="Porto\php\php-mailer\test\phpmailerTest.php" />
+    <Content Include="Porto\php\php-mailer\test\testbootstrap-dist.php" />
+    <Content Include="Porto\php\php-mailer\test\test_callback.php" />
+    <Content Include="Porto\php\simple-php-captcha\backgrounds\45-degree-fabric.png" />
+    <Content Include="Porto\php\simple-php-captcha\backgrounds\cloth-alike.png" />
+    <Content Include="Porto\php\simple-php-captcha\backgrounds\grey-sandbag.png" />
+    <Content Include="Porto\php\simple-php-captcha\backgrounds\kinda-jean.png" />
+    <Content Include="Porto\php\simple-php-captcha\backgrounds\polyester-lite.png" />
+    <Content Include="Porto\php\simple-php-captcha\backgrounds\stitched-wool.png" />
+    <Content Include="Porto\php\simple-php-captcha\backgrounds\white-carbon.png" />
+    <Content Include="Porto\php\simple-php-captcha\backgrounds\white-wave.png" />
+    <Content Include="Porto\php\simple-php-captcha\simple-php-captcha.php" />
+    <Content Include="Porto\php\twitter-feed.php" />
+    <Content Include="Porto\php\twitteroauth\OAuth.php" />
+    <Content Include="Porto\php\twitteroauth\twitteroauth.php" />
+    <Content Include="Porto\vendor\bootstrap\bootstrap-theme.css" />
+    <Content Include="Porto\vendor\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="Porto\vendor\bootstrap\bootstrap.css" />
+    <Content Include="Porto\vendor\bootstrap\bootstrap.js" />
+    <Content Include="Porto\vendor\bootstrap\bootstrap.min.css" />
+    <Content Include="Porto\vendor\bootstrap\bootstrap.min.js" />
+    <Content Include="Porto\vendor\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="Porto\vendor\bootstrap\npm.js" />
+    <Content Include="Porto\vendor\circle-flip-slideshow\css\component.css" />
+    <Content Include="Porto\vendor\circle-flip-slideshow\js\jquery.flipshow.js" />
+    <Content Include="Porto\vendor\circle-flip-slideshow\README.txt" />
+    <Content Include="Porto\vendor\common\common.js" />
+    <Content Include="Porto\vendor\excanvas\excanvas.js" />
+    <Content Include="Porto\vendor\fontawesome\css\font-awesome.css" />
+    <Content Include="Porto\vendor\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Porto\vendor\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Porto\vendor\isotope\jquery.isotope.js" />
+    <Content Include="Porto\vendor\jflickrfeed\jflickrfeed.js" />
+    <Content Include="Porto\vendor\jquery-cookie\jquery-cookie.js" />
+    <Content Include="Porto\vendor\jquery.appear\jquery.appear.js" />
+    <Content Include="Porto\vendor\jquery.easing\jquery.easing.js" />
+    <Content Include="Porto\vendor\jquery.easy-pie-chart\jquery.easy-pie-chart.js" />
+    <Content Include="Porto\vendor\jquery.gmap\jquery.gmap.js" />
+    <Content Include="Porto\vendor\jquery.stellar\jquery.stellar.js" />
+    <Content Include="Porto\vendor\jquery.validation\jquery.validation.js" />
+    <Content Include="Porto\vendor\jquery\jquery.js" />
+    <Content Include="Porto\vendor\magnific-popup\jquery.magnific-popup.js" />
+    <Content Include="Porto\vendor\magnific-popup\magnific-popup.css" />
+    <Content Include="Porto\vendor\modernizr\modernizr.js" />
+    <Content Include="Porto\vendor\nivo-slider\bar\arrows.png" />
+    <Content Include="Porto\vendor\nivo-slider\bar\bar.css" />
+    <Content Include="Porto\vendor\nivo-slider\bar\bullets.png" />
+    <Content Include="Porto\vendor\nivo-slider\bar\loading.gif" />
+    <Content Include="Porto\vendor\nivo-slider\dark\arrows.png" />
+    <Content Include="Porto\vendor\nivo-slider\dark\bullets.png" />
+    <Content Include="Porto\vendor\nivo-slider\dark\dark.css" />
+    <Content Include="Porto\vendor\nivo-slider\dark\loading.gif" />
+    <Content Include="Porto\vendor\nivo-slider\default\arrows.png" />
+    <Content Include="Porto\vendor\nivo-slider\default\bullets.png" />
+    <Content Include="Porto\vendor\nivo-slider\default\default.css" />
+    <Content Include="Porto\vendor\nivo-slider\default\loading.gif" />
+    <Content Include="Porto\vendor\nivo-slider\jquery.nivo.slider.js" />
+    <Content Include="Porto\vendor\nivo-slider\light\arrows.png" />
+    <Content Include="Porto\vendor\nivo-slider\light\bullets.png" />
+    <Content Include="Porto\vendor\nivo-slider\light\light.css" />
+    <Content Include="Porto\vendor\nivo-slider\light\loading.gif" />
+    <Content Include="Porto\vendor\nivo-slider\nivo-slider.css" />
+    <Content Include="Porto\vendor\owlcarousel\AjaxLoader.gif" />
+    <Content Include="Porto\vendor\owlcarousel\grabbing.png" />
+    <Content Include="Porto\vendor\owlcarousel\owl.carousel.css" />
+    <Content Include="Porto\vendor\owlcarousel\owl.carousel.js" />
+    <Content Include="Porto\vendor\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Porto\vendor\owlcarousel\owl.theme.css" />
+    <Content Include="Porto\vendor\owlcarousel\owl.transitions.css" />
+    <Content Include="Porto\vendor\requirejs\requirejs.js" />
+    <Content Include="Porto\vendor\respond\respond.js" />
+    <Content Include="Porto\vendor\rs-plugin\assets\arrowleft.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\arrowright.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\arrow_large_left.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\arrow_large_right.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\arrow_left.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\arrow_left2.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\arrow_right.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\arrow_right2.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\black50.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\boxed_bgtile.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\bullet.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\bullets.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\bullets2.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\bullet_boxed.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\coloredbg.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\grain.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\gridtile.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\gridtile_3x3.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\gridtile_3x3_white.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\gridtile_white.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\large_left.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\large_right.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\loader.gif" />
+    <Content Include="Porto\vendor\rs-plugin\assets\loader2.gif" />
+    <Content Include="Porto\vendor\rs-plugin\assets\navigdots.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\navigdots_bgtile.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\shadow1.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\shadow2.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\shadow3.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\small_left.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\small_left_boxed.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\small_right.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\small_right_boxed.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\timer.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\timerdot.png" />
+    <Content Include="Porto\vendor\rs-plugin\assets\transparent.jpg" />
+    <Content Include="Porto\vendor\rs-plugin\assets\white50.png" />
+    <Content Include="Porto\vendor\rs-plugin\css\settings-ie8.css" />
+    <Content Include="Porto\vendor\rs-plugin\css\settings.css" />
+    <Content Include="Porto\vendor\rs-plugin\font\revicons.svg" />
+    <Content Include="Porto\vendor\rs-plugin\images\decor_inside.png" />
+    <Content Include="Porto\vendor\rs-plugin\images\decor_inside_white.png" />
+    <Content Include="Porto\vendor\rs-plugin\images\decor_testimonial.png" />
+    <Content Include="Porto\vendor\rs-plugin\images\gradient\g30.png" />
+    <Content Include="Porto\vendor\rs-plugin\images\gradient\g40.png" />
+    <Content Include="Porto\vendor\rs-plugin\js\jquery.themepunch.revolution.js" />
+    <Content Include="Porto\vendor\rs-plugin\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Porto\vendor\rs-plugin\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Porto\vendor\twitterjs\twitter.js" />
+    <Content Include="Porto\vendor\vide\vide.js" />
+    <EntityDeploy Include="Models\Test.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Test.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Test.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Test.edmx</DependentUpon>
+      <LastGenOutput>Test.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Test.edmx.diagram">
+      <DependentUpon>Test.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Test.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Test.edmx</DependentUpon>
+      <LastGenOutput>Test1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Porto\css\fonts\star.eot" />
+    <Content Include="Porto\css\fonts\star.ttf" />
+    <Content Include="Porto\css\fonts\star.woff" />
+    <Content Include="Porto\master\less\mixins.less" />
+    <Content Include="Porto\master\less\skin.less" />
+    <Content Include="Porto\master\sass\base\_base.scss" />
+    <Content Include="Porto\master\sass\base\_footer.scss" />
+    <Content Include="Porto\master\sass\base\_header-center.scss" />
+    <Content Include="Porto\master\sass\base\_header-clean-top.scss" />
+    <Content Include="Porto\master\sass\base\_header-colored.scss" />
+    <Content Include="Porto\master\sass\base\_header-darken-top-border.scss" />
+    <Content Include="Porto\master\sass\base\_header-flat-menu.scss" />
+    <Content Include="Porto\master\sass\base\_header-mega-menu.scss" />
+    <Content Include="Porto\master\sass\base\_header-narrow.scss" />
+    <Content Include="Porto\master\sass\base\_header-shop.scss" />
+    <Content Include="Porto\master\sass\base\_header-signin.scss" />
+    <Content Include="Porto\master\sass\base\_header-single-menu.scss" />
+    <Content Include="Porto\master\sass\base\_header.scss" />
+    <Content Include="Porto\master\sass\base\_page-top.scss" />
+    <Content Include="Porto\master\sass\config\_helpers.scss" />
+    <Content Include="Porto\master\sass\config\_imports.scss" />
+    <Content Include="Porto\master\sass\config\_variables.scss" />
+    <Content Include="Porto\master\sass\custom.scss" />
+    <Content Include="Porto\master\sass\fonts\star.eot" />
+    <Content Include="Porto\master\sass\fonts\star.ttf" />
+    <Content Include="Porto\master\sass\fonts\star.woff" />
+    <Content Include="Porto\master\sass\gui\_accordion.scss" />
+    <Content Include="Porto\master\sass\gui\_arrows.scss" />
+    <Content Include="Porto\master\sass\gui\_bars.scss" />
+    <Content Include="Porto\master\sass\gui\_buttons.scss" />
+    <Content Include="Porto\master\sass\gui\_carousels.scss" />
+    <Content Include="Porto\master\sass\gui\_counters.scss" />
+    <Content Include="Porto\master\sass\gui\_featured-box.scss" />
+    <Content Include="Porto\master\sass\gui\_forms.scss" />
+    <Content Include="Porto\master\sass\gui\_headings.scss" />
+    <Content Include="Porto\master\sass\gui\_icons.scss" />
+    <Content Include="Porto\master\sass\gui\_images.scss" />
+    <Content Include="Porto\master\sass\gui\_lists.scss" />
+    <Content Include="Porto\master\sass\gui\_misc.scss" />
+    <Content Include="Porto\master\sass\gui\_navs.scss" />
+    <Content Include="Porto\master\sass\gui\_parallax.scss" />
+    <Content Include="Porto\master\sass\gui\_popups.scss" />
+    <Content Include="Porto\master\sass\gui\_pricing-tables.scss" />
+    <Content Include="Porto\master\sass\gui\_scroll-top-top.scss" />
+    <Content Include="Porto\master\sass\gui\_sections.scss" />
+    <Content Include="Porto\master\sass\gui\_sidebar.scss" />
+    <Content Include="Porto\master\sass\gui\_sliders.scss" />
+    <Content Include="Porto\master\sass\gui\_social-icons.scss" />
+    <Content Include="Porto\master\sass\gui\_sort.scss" />
+    <Content Include="Porto\master\sass\gui\_tabs.scss" />
+    <Content Include="Porto\master\sass\gui\_testimonials.scss" />
+    <Content Include="Porto\master\sass\gui\_thumb-info.scss" />
+    <Content Include="Porto\master\sass\gui\_timeline.scss" />
+    <Content Include="Porto\master\sass\gui\_toggles.scss" />
+    <Content Include="Porto\master\sass\gui\_typography.scss" />
+    <Content Include="Porto\master\sass\gui\_videos.scss" />
+    <Content Include="Porto\master\sass\gui\_word-rotator.scss" />
+    <Content Include="Porto\master\sass\ie.scss" />
+    <Content Include="Porto\master\sass\layouts\_boxed.scss" />
+    <Content Include="Porto\master\sass\layouts\_dark.scss" />
+    <Content Include="Porto\master\sass\partials\_history.scss" />
+    <Content Include="Porto\master\sass\partials\_home.scss" />
+    <Content Include="Porto\master\sass\partials\_maps.scss" />
+    <Content Include="Porto\master\sass\partials\_page-not-found.scss" />
+    <Content Include="Porto\master\sass\partials\_portfolio.scss" />
+    <Content Include="Porto\master\sass\partials\_search-results.scss" />
+    <Content Include="Porto\master\sass\partials\_team.scss" />
+    <Content Include="Porto\master\sass\theme-animate.scss" />
+    <Content Include="Porto\master\sass\theme-blog.scss" />
+    <Content Include="Porto\master\sass\theme-elements.scss" />
+    <Content Include="Porto\master\sass\theme-shop.scss" />
+    <Content Include="Porto\master\sass\theme.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_button.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_clearfix.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_font-family.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_hide-text.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_html5-input-types.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_position.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_prefixer.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_retina-image.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_size.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_timing-functions.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\addons\_triangle.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_animation.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_appearance.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_backface-visibility.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_background-image.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_background.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_border-image.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_border-radius.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_box-sizing.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_columns.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_flex-box.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_font-face.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_hidpi-media-query.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_image-rendering.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_inline-block.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_keyframes.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_linear-gradient.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_perspective.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_placeholder.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_radial-gradient.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_transform.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_transition.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\css3\_user-select.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\functions\_compact.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\functions\_flex-grid.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\functions\_grid-width.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\functions\_linear-gradient.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\functions\_modular-scale.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\functions\_px-to-em.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\functions\_radial-gradient.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\functions\_tint-shade.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\functions\_transition-property-name.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\helpers\_deprecated-webkit-gradient.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\helpers\_gradient-positions-parser.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\helpers\_linear-positions-parser.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\helpers\_radial-arg-parser.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\helpers\_radial-positions-parser.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\helpers\_render-gradients.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\helpers\_shape-size-stripper.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\_bourbon-deprecated-upcoming.scss" />
+    <Content Include="Porto\master\sass\vendor\bourbon\_bourbon.scss" />
+    <Content Include="Porto\php\php-mailer\changelog.md" />
+    <Content Include="Porto\php\php-mailer\composer.json" />
+    <Content Include="Porto\php\php-mailer\docs\generatedocs.sh" />
+    <Content Include="Porto\php\php-mailer\examples\code_generator.phps" />
+    <Content Include="Porto\php\php-mailer\examples\exceptions.phps" />
+    <Content Include="Porto\php\php-mailer\examples\gmail.phps" />
+    <Content Include="Porto\php\php-mailer\examples\mail.phps" />
+    <Content Include="Porto\php\php-mailer\examples\mailing_list.phps" />
+    <Content Include="Porto\php\php-mailer\examples\pop_before_smtp.phps" />
+    <Content Include="Porto\php\php-mailer\examples\sendmail.phps" />
+    <Content Include="Porto\php\php-mailer\examples\smtp.phps" />
+    <Content Include="Porto\php\php-mailer\examples\smtp_check.phps" />
+    <Content Include="Porto\php\php-mailer\examples\smtp_no_auth.phps" />
+    <Content Include="Porto\php\php-mailer\extras\README.md" />
+    <Content Include="Porto\php\php-mailer\LICENSE" />
+    <Content Include="Porto\php\php-mailer\README.md" />
+    <Content Include="Porto\php\php-mailer\test\fakepopserver.sh" />
+    <Content Include="Porto\php\php-mailer\test\fakesendmail.sh" />
+    <Content Include="Porto\php\php-mailer\test\runfakepopserver.sh" />
+    <Content Include="Porto\php\php-mailer\travis.phpunit.xml.dist" />
+    <Content Include="Porto\php\php-mailer\VERSION" />
+    <Content Include="Porto\php\simple-php-captcha\fonts\times_new_yorker.ttf" />
+    <Content Include="Porto\vendor\bootstrap\bootstrap-theme.css.map" />
+    <Content Include="Porto\vendor\bootstrap\bootstrap.css.map" />
+    <Content Include="Porto\vendor\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="Porto\vendor\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="Porto\vendor\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="Porto\vendor\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Porto\vendor\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Porto\vendor\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Porto\vendor\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Porto\vendor\fontawesome\less\bordered-pulled.less" />
+    <Content Include="Porto\vendor\fontawesome\less\core.less" />
+    <Content Include="Porto\vendor\fontawesome\less\fixed-width.less" />
+    <Content Include="Porto\vendor\fontawesome\less\font-awesome.less" />
+    <Content Include="Porto\vendor\fontawesome\less\icons.less" />
+    <Content Include="Porto\vendor\fontawesome\less\larger.less" />
+    <Content Include="Porto\vendor\fontawesome\less\list.less" />
+    <Content Include="Porto\vendor\fontawesome\less\mixins.less" />
+    <Content Include="Porto\vendor\fontawesome\less\path.less" />
+    <Content Include="Porto\vendor\fontawesome\less\rotated-flipped.less" />
+    <Content Include="Porto\vendor\fontawesome\less\spinning.less" />
+    <Content Include="Porto\vendor\fontawesome\less\stacked.less" />
+    <Content Include="Porto\vendor\fontawesome\less\variables.less" />
+    <Content Include="Porto\vendor\fontawesome\scss\font-awesome.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_bordered-pulled.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_core.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_fixed-width.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_icons.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_larger.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_list.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_mixins.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_path.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_rotated-flipped.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_spinning.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_stacked.scss" />
+    <Content Include="Porto\vendor\fontawesome\scss\_variables.scss" />
+    <Content Include="Porto\vendor\rs-plugin\assets\arrows.psd" />
+    <Content Include="Porto\vendor\rs-plugin\assets\bullets.psd" />
+    <Content Include="Porto\vendor\rs-plugin\assets\small_arrows.psd" />
+    <Content Include="Porto\vendor\rs-plugin\font\revicons.eot" />
+    <Content Include="Porto\vendor\rs-plugin\font\revicons.ttf" />
+    <Content Include="Porto\vendor\rs-plugin\font\revicons.woff" />
+    <Content Include="Porto\img\blog\Thumbs.db" />
+    <Content Include="Porto\img\clients\Thumbs.db" />
+    <Content Include="Porto\img\icons\Thumbs.db" />
+    <Content Include="Porto\img\logos\Thumbs.db" />
+    <Content Include="Porto\img\patterns\Thumbs.db" />
+    <Content Include="Porto\img\products\Thumbs.db" />
+    <Content Include="Porto\img\projects\Thumbs.db" />
+    <Content Include="Porto\img\slides\Thumbs.db" />
+    <Content Include="Porto\img\team\Thumbs.db" />
+    <Content Include="Porto\img\Thumbs.db" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.min.js" />
     <Content Include="Web.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Test\Create.cshtml" />
+    <Content Include="Views\Test\Delete.cshtml" />
+    <Content Include="Views\Test\Details.cshtml" />
+    <Content Include="Views\Test\Edit.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RolesAdminController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AdminViewModel.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Test.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Test.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Test.cs">
+      <DependentUpon>Test.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Test.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Test.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Test1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Test.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Properties\PublishProfiles\Phzio2014.pubxml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\UsersAdmin\Index.cshtml" />
+    <Content Include="Views\UsersAdmin\Edit.cshtml" />
+    <Content Include="Views\UsersAdmin\Details.cshtml" />
+    <Content Include="Views\UsersAdmin\Delete.cshtml" />
+    <Content Include="Views\UsersAdmin\Create.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\RolesAdmin\Index.cshtml" />
+    <Content Include="Views\RolesAdmin\Edit.cshtml" />
+    <Content Include="Views\RolesAdmin\Details.cshtml" />
+    <Content Include="Views\RolesAdmin\Delete.cshtml" />
+    <Content Include="Views\RolesAdmin\Create.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\DisplayEmail.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -145,7 +918,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -172,15 +947,17 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
-  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
-    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
-    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
-  </Target>
   <Import Project="..\packages\Microsoft.ApplicationInsights.0.11.1-build00694\tools\net40\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.11.1-build00694\tools\net40\Microsoft.ApplicationInsights.targets')" />
   <Target Name="EnsureApplicationInsightsImported" BeforeTargets="BeforeBuild" Condition="'$(ApplicationInsightsImported)' == ''">
     <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.11.1-build00694\tools\net40\Microsoft.ApplicationInsights.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." />
     <Error Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.11.1-build00694\tools\net40\Microsoft.ApplicationInsights.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
